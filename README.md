@@ -13,3 +13,23 @@ After updating the environment, update the `requirements.txt` file with the foll
 ```
     pip freeze > requirements.txt
 ```
+## Directory Structure
+The `data` folder contains the documents to train on (the knowledge base).
+The `storage` folder contains application data (embeddings etc.)
+
+```
+    .
+    ├── data
+    │   └── ...
+    ├── storage
+    │   └── ...
+    ├── README.md
+    └── requirements.txt
+```
+
+### Data
+You can download some example data from LLama Index like this:
+
+```
+    wget https://raw.githubusercontent.com/run-llama/llama_index/main/examples/paul_graham_essay/data/paul_graham_essay.txt -OutFile .\data\paul_graham_essay.txt
+```
