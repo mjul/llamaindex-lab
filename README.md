@@ -28,8 +28,9 @@ The `storage` folder contains application data (embeddings etc.)
 ```
 
 ### Data
-You can download some example data from LLama Index like this:
+You can download some example data like this:
 
 ```
-    wget https://raw.githubusercontent.com/run-llama/llama_index/main/examples/paul_graham_essay/data/paul_graham_essay.txt -OutFile .\data\paul_graham_essay.txt
+    Invoke-WebRequest https://raw.githubusercontent.com/run-llama/llama_index/main/examples/paul_graham_essay/data/paul_graham_essay.txt -OutFile .\data\paul_graham_essay.txt
+    Invoke-WebRequest https://arxiv.org/pdf/2307.09288.pdf -OutFile .\data\2307.09288.pdf
 ```
